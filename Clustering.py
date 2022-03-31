@@ -1,28 +1,3 @@
-#All Lib
-import cv2
-from imutils import face_utils
-import matplotlib.pyplot as plt
-from deepface import DeepFace
-from retinaface import RetinaFace
-import tensorflow as tf
-print("TensorFlow version:", tf.__version__)
-from tqdm.contrib.concurrent import thread_map 
-#All Lib
-import os
-import glob
-import time
-import shutil
-import numpy as np
-import timeit
-import threading
-import tqdm
-import multiprocessing as mp
-from deepface.commons import distance as dst
-from deepface.basemodels import ArcFace
-from deepface.commons import functions
-from tensorflow import keras
-from tensorflow.keras.preprocessing import image
-
 from sklearn.cluster import DBSCAN
 import hdbscan
 from imutils import build_montages
@@ -33,7 +8,7 @@ import shutil
 import os
 import face_recognition
 
-root_path=r"DataSet/dataset"
+root_path=r"dataset"
 Paths=[]
 # path for all files
 for name in glob.glob(root_path+'/*'):
